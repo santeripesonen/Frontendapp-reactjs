@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;700&display=swap%27');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(1, 160, 67);
+  margin: 10px;
+  text-align: center;
+}
+
+.layout-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background: url(bäkkikuva2-jee-jee.jpg);
+  background-size: contain;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  z-index: 1;
+}
+
+.App::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.459);
+  z-index: -1;
+}
+
+.search-bar {
+  padding: 4px 5px;
+  line-height: 1;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 300px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.songs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song-container {
+  background-color: rgba(143, 142, 142, 0.822);
+  margin: 5px;
+  max-width: 600px;
+  padding: 10px;
+  text-align: center;
+}
+
+.song-container p {
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 1.1rem;
+}
+
+.song-container-edit {
+  background-color: rgb(161, 161, 161);
+  margin: 5px;
+  max-width: 600px;
+  padding: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.btn {
+  border: none;
+  padding: 7px 11px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+
+.edit {
+  background-color: rgb(29, 155, 240);
+}
+
+.delete {
+  background-color: rgb(121, 24, 0);
+}
+
+.clear {
+  background-color: rgb(0, 121, 36);
+}
